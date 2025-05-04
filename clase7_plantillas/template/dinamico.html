@@ -11,7 +11,14 @@
     <h3>Categorias: </h3>
     <ul>
         {%for category in categorys%}
-            <li>category</li>
+        {%comment %}
+            esto es para que la primera palabra que sea seleccionada se tome especial
+        {%endcomment%}
+            {%if forloop.first %} 
+            <li><b>{{category}}</b></li>
+            {%else%}
+            <li>{{category}}</li>
+            {%endif%}
         {%endfor%}
     </ul>
     
