@@ -8,4 +8,4 @@ def dinamico(request, name):
     print(type(name))
     categorias = ['basos', 'copas', 'tamques']
     print(name)
-    return render(request, 'dinamico.html', {'name':name, 'category': categorias})
+    return render(request, 'dinamico.html', {'name':name, 'categorys': categorias})

@@ -9,7 +9,11 @@
     <h1>Bienvenido {{name}}</h1>
     <br>
     <h3>Categorias: </h3>
-    <p>{{category}}</p>
+    <ul>
+        {%for category in categorys%}
+            <li>category</li>
+        {%endfor%}
+    </ul>
     
 </body>
 </html>
