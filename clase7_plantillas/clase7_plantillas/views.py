@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def simple(request):
-    return HttpResponse('<h1>Hola, Mundo</h1>')
+    return render(request, 'simple.html', {'nombre':'Daniel'})
